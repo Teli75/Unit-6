@@ -1,0 +1,23 @@
+{
+  "name": "techdegree-project-6",
+  "version": "1.0.0",
+  "description": "Showcases treehouse projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teli75/Unit_6_Project.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Teli75/Unit_6_Project/issues"
+  },
+  "homepage": "https://github.com/Teli75/Unit_6_Project#readme",
+  "dependencies": {
+    "express": "^4.15.1",
+    "pug": "^3.0.2"
+  }
+}

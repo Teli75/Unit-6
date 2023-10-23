@@ -1,0 +1,13 @@
+{
+    "projects": [
+      {
+        "id": "0",
+        "project_name": "Random Quote Generator",
+        "description": "Shows a random quote",
+        "technologies": "html, css, javascript",
+        "live_link": "check project resources",
+        "github_link": "",
+        "image_urls": ""
+      }
+    ]
+  }

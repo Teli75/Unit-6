@@ -11,14 +11,14 @@ var app = express();
 //app.use(bodyParser.urlencoded({extended: false}));
 
 //View engine setup
-app.set('views', path.join(_dirname, 'views'));
+//app.set('views', path.join(_dirname, 'views'));
 //Sets view engine to pug
 app.set('view engine', 'pug');
 
 //app.use(express.static('public'))
 app.use("/static", express.static("public"));
 app.use(cookieParser());
-app.use(express.json());
+//app.use(express.json());
 
 app.use('/', indexRouter);
 

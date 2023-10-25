@@ -5,9 +5,12 @@ block content
     h2 Hey Prospective Employer 
     p These are my projects 
 
-    each project in projects 
-      a(href=`/projects/${project.id}`)
-      h2= project.project_name
-      img(src=`${project.image_urls[0]}`)
+      each project in projects
+        h1= project.project_name
+
+    //- each project in projects 
+    //-   a(href=`/projects/${project.id}`)
+    //-   h2= project.project_name
+    //-   img(src=`${project.image_urls[0]}`)
 
 

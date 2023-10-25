@@ -7,7 +7,43 @@
         "technologies": "html, css, javascript",
         "live_link": "check project resources",
         "github_link": "",
-        "image_urls": ""
+        "image_urls": "/images/Random_Quote_Main"
+      },
+      {
+        "id": "1",
+        "project_name": "Data Pagination and Filtering",
+        "description": "Uses pagination to enhance usability of a page",
+        "technologies": "html, css, javascript",
+        "live_link": "",
+        "github_link": "https://github.com/Teli75/Project-2",
+        "image_urls": "/images/Pagination_Main"
+      },
+      {
+        "id": "2",
+        "project_name": "Interactive Form",
+        "description": "Uses JS to enhanve an interactive registration form",
+        "technologies": "html, css, javascript",
+        "live_link": "",
+        "github_link": "https://github.com/Teli75/TechDegree-Project-3",
+        "image_urls": "/images/Conference_Main"
+      },
+      {
+        "id": "3",
+        "project_name": "OOP Game Show App",
+        "description": "Uuse JavaScript and OOP for a game like hang man",
+        "technologies": "html, css, javascript",
+        "live_link": "",
+        "github_link": "https://github.com/Teli75/Unit_4_Project",
+        "image_urls": "/images/Phase_Hunter_Main"
+      },
+      {
+        "id": "4",
+        "project_name": "OOP Game Show App",
+        "description": "Uses an api to grab employee data to build an employee directory",
+        "technologies": "html, css, javascript",
+        "live_link": "",
+        "github_link": "https://github.com/Teli75/Unit-5-Project",
+        "image_urls": "/images/Employee_Dir_Main"
       }
     ]
   }

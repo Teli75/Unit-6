@@ -1,50 +1,32 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
 
+
+var indexRouter = require('./routes/index');
+
+var app = express();
 //encodes urls and turns off extended option
-app.use(bodyParser.urlendoded({extended: false}));
-require('./data.json');
+//app.use(bodyParser.urlencoded({extended: false}));
 
-//Optionally - the path module which can be used when setting the absolute path in the express.static function.
-const app = express();
-
+//View engine setup
+app.set('views', path.join(_dirname, 'views'));
 //Sets view engine to pug
 app.set('view engine', 'pug');
 
-//index route
-app.get('/index', (req, res) => {
-    res.send('Index');
+//app.use(express.static('public'))
+app.use("/static", express.static("public"));
+app.use(cookieParser());
+app.use(express.json());
 
+app.use('/', indexRouter);
+
+app.use(function(req, res, next) {
+    next(createError(404));
 });
 
-//about route
-// app.get('/about', (req, res) => {
-//     res.send('About');
-// });
-
-//about route
-app.get('/About', (req, res) => {
-    res.render('about');
-});
-
-app.get('/', (req, res) => {
-    res.render('index');
-});
-
-//example
-app.get('/', (req, res) => {
-    res.send('I love you');
-});
-
-app.get('/cards', (req, res) => {
-    res.render('cards', { prompt: "Who is buried in Grant's tomb?" });
-});
-
-//Dynamic project routes i.e. project/:id
 
 app.listen(3001);
 
-// app.listen(3001, () => {
-//     console.log('The app is running on localhost:3001!')
-// });
-
+module.exports = app;

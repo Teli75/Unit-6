@@ -7,10 +7,9 @@ block content
 
       each project in projects
         h1= project.project_name
+        
+        a(href=`/projects/${project.id}`)
 
-    //- each project in projects 
-    //-   a(href=`/projects/${project.id}`)
-    //-   h2= project.project_name
-    //-   img(src=`${project.image_urls[0]}`)
+        img(src=`${project.image_urls[0]}`)
 
 

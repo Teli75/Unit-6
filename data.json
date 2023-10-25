@@ -7,7 +7,7 @@
         "technologies": "html, css, javascript",
         "live_link": "check project resources",
         "github_link": "",
-        "image_urls": "/images/Random_Quote_Main"
+        "image_urls": "../public/images/Random_Quote_Main.jpg"
       },
       {
         "id": "1",
@@ -16,7 +16,7 @@
         "technologies": "html, css, javascript",
         "live_link": "",
         "github_link": "https://github.com/Teli75/Project-2",
-        "image_urls": "/images/Pagination_Main"
+        "image_urls": "../public/images/Pagination_Main.jpg"
       },
       {
         "id": "2",
@@ -25,7 +25,7 @@
         "technologies": "html, css, javascript",
         "live_link": "",
         "github_link": "https://github.com/Teli75/TechDegree-Project-3",
-        "image_urls": "/images/Conference_Main"
+        "image_urls": "../public/images/Conference_Main.jpg"
       },
       {
         "id": "3",
@@ -34,16 +34,16 @@
         "technologies": "html, css, javascript",
         "live_link": "",
         "github_link": "https://github.com/Teli75/Unit_4_Project",
-        "image_urls": "/images/Phase_Hunter_Main"
+        "image_urls": "../public/images/Phase_Hunter_Main.jpg"
       },
       {
         "id": "4",
-        "project_name": "OOP Game Show App",
+        "project_name": "Public API Requests",
         "description": "Uses an api to grab employee data to build an employee directory",
         "technologies": "html, css, javascript",
         "live_link": "",
         "github_link": "https://github.com/Teli75/Unit-5-Project",
-        "image_urls": "/images/Employee_Dir_Main"
+        "image_urls": "../public/images/Employee_Dir_Main.jpg"
       }
     ]
   }

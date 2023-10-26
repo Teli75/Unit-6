@@ -2,6 +2,7 @@ extends layout
 
 block content
     article 
-        h1= err.message
+        h1= err
         h2= err.status
+        h1= err.message
         pre= err.stack

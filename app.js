@@ -34,12 +34,15 @@ app.use((req, res, next) => {
 });
 
 app.use((err, req, res, next) => {
-    if(err.status === 404){
+    if(err.status == 404){
         res.status(404);
+        console.log(err.status);
         res.render('page-not-found', err);
     } else {
-        err.status = err.status || 500;
-        err.message= err.message || "Whoops!";
+        err.status =  err.status || 500;
+        console.log(err.status);
+        err.message = err.message || "Whoops!";
+       
         res.render('error', err);
     }
 })

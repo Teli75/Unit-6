@@ -1,20 +1,31 @@
 extends layout.pug
 
 block content
-  section#content
-  .header This is my header 
-  .sidebar
-      .sidebar-info-box
-        h1 Sidebar
-        p Sidebar paragraph
-  .portfolio-intro
-    h1 portfolio intro h1
-  .projects-box
-    .grid
+  article.portfolio-intro
+
+    //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
+    h1 Hello potential Employers
+
+    //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
+    p These are all the treehouse projects that I have been working on these past few weeks
+
+
+  article.portfolio-project-thumbs
+    .projects-box.box.grid
+
       each project in projects
-        .box
-          h1= project.project_name
-          .cell
+      
+        //- Use the example Pug code below and interpolated template literals as needed to dynamically generate:
+          //- The paths in the link's href and img's src attributes
+          //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
+          //- The project title for the h5 element's text
+
+        .cell
+          a(href='#')
+            img.thumbnail(src='/projects/${project.id}', alt='')
+            h5 My Site
+
+
             a(href=`/projects/${project.id}`)
             img(src=`${project.image_urls}`)
 

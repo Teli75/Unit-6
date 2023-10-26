@@ -39,7 +39,7 @@ app.use((err, req, res, next) => {
         res.render('page-not-found', err);
     } else {
         err.status = err.status || 500;
-        
+        err.message= err.message || "Whoops!";
         res.render('error', err);
     }
 })

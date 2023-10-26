@@ -28,14 +28,17 @@ app.use('/project', projectRouter);
 app.use((req, res, next) => {
     console.log("Hello");
     const err = new Error("Not Found");
+    err.message = "not-found";
     err.status = 404;
     next(err);
     //res.render('page-not-found', err);
 });
 
 app.use((err, req, res, next) => {
-    if(err.status == 404){
+    if(err.status === 404){
         res.status(404);
+        err.status = 404;
+        err.message = "not-found";
         console.log(err.status);
         res.render('page-not-found', err);
     } else {

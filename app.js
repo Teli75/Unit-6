@@ -1,4 +1,4 @@
-var createError = require('http-errors');
+//var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -24,6 +24,16 @@ app.use(cookieParser());
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/project', projectRouter);
+
+app.use((req, res, next) => {
+    console.log("Hello");
+    const err = new Error("oh noes!");
+    next();
+});
+app.use((req, res, next) => {
+    console.log("world");
+    next();
+})
 
 
 app.listen(3001);

@@ -22,7 +22,7 @@ block content
 
         .cell
           a(href=`/project/${project.id}`)
-            img.thumbnail(src=`${project.image_urls}`, alt='Image of my project')
+            img.thumbnail(src=`${project.image_urls[0]}`, alt='Image of my project')
             h5=`${project.project_name}`
 
 

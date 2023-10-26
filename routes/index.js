@@ -10,12 +10,12 @@ router.get('/', (req, res, next) => {
 /*Project Page */
 router.get('/project/:id', function(req, res, next) {
     const projectId = req.params.id;
-    const project = projects.find( ({ id }) => id === +projectId );
+    const project = projects.find( ({ id }) => id === projectId );
     
     if (project) {
       res.render('project', { project });
     } else {
-        res.sendStatus(404);
+        res.send('hi');
     }
   });
   

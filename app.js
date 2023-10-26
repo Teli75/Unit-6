@@ -40,13 +40,13 @@ app.use((err, req, res, next) => {
         err.status = 404;
         err.message = "not-found";
         console.log(err.status);
-        res.render('page-not-found', err);
+        res.render('page-not-found', {err});
     } else {
         err.status =  err.status || 500;
         console.log(err.status);
         err.message = err.message || "Whoops!";
        
-        res.render('error', err);
+        res.render('error', {err});
     }
 })
 

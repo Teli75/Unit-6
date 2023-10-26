@@ -30,15 +30,18 @@ app.use((req, res, next) => {
     const err = new Error("Not Found");
     err.status = 404;
     next(err);
+    //res.render('page-not-found', err);
 });
 
 app.use((err, req, res, next) => {
-    res.locals.error = err;
-   
-    res.status(err.status);
-    res.render('error');
-    
-    //res.render('error', err);
+    if(err.status === 404){
+        res.status(404);
+        res.render('page-not-found', err);
+    } else {
+        err.status = err.status || 500;
+        
+        res.render('error', err);
+    }
 })
 
 

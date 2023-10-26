@@ -7,7 +7,7 @@
         "technologies": "html, css, javascript",
         "live_link": "check project resources",
         "github_link": "",
-        "image_urls": "../public/images/Random_Quote_Main.jpg"
+        "image_urls": "/static/images/Random_Quote_Main.jpg"
       },
       {
         "id": "1",
@@ -16,7 +16,7 @@
         "technologies": "html, css, javascript",
         "live_link": "",
         "github_link": "https://github.com/Teli75/Project-2",
-        "image_urls": "../public/images/Pagination_Main.jpg"
+        "image_urls": "/static/images/Pagination_Main.jpg"
       },
       {
         "id": "2",
@@ -25,7 +25,7 @@
         "technologies": "html, css, javascript",
         "live_link": "",
         "github_link": "https://github.com/Teli75/TechDegree-Project-3",
-        "image_urls": "../public/images/Conference_Main.jpg"
+        "image_urls": "/static/images/Conference_Main.jpeg"
       },
       {
         "id": "3",
@@ -34,7 +34,7 @@
         "technologies": "html, css, javascript",
         "live_link": "",
         "github_link": "https://github.com/Teli75/Unit_4_Project",
-        "image_urls": "../public/images/Phase_Hunter_Main.jpg"
+        "image_urls": "/static/images/Phase_Hunter_Main_2.jpg"
       },
       {
         "id": "4",
@@ -43,7 +43,7 @@
         "technologies": "html, css, javascript",
         "live_link": "",
         "github_link": "https://github.com/Teli75/Unit-5-Project",
-        "image_urls": "../public/images/Employee_Dir_Main.jpg"
+        "image_urls": "/static/images/Employee_Dir_Main.jpg"
       }
     ]
   }

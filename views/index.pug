@@ -2,14 +2,20 @@ extends layout.pug
 
 block content
   section#content
-    h2 Hey Prospective Employer 
-    p These are my projects 
-
+  .header This is my header 
+  .sidebar
+      .sidebar-info-box
+        h1 Sidebar
+        p Sidebar paragraph
+  .portfolio-intro
+    h1 portfolio intro h1
+  .projects-box
+    .grid
       each project in projects
-        h1= project.project_name
-        
-        a(href=`/projects/${project.id}`)
-
-        img(src=`${project.image_urls[0]}`)
+        .box
+          h1= project.project_name
+          .cell
+            a(href=`/project/${project.id}`)
+            img(src=`${project.image_urls}`)
 
 

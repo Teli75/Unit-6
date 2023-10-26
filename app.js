@@ -27,12 +27,18 @@ app.use('/project', projectRouter);
 
 app.use((req, res, next) => {
     console.log("Hello");
-    const err = new Error("oh noes!");
-    next();
+    const err = new Error("Not Found");
+    err.status = 404;
+    next(err);
 });
-app.use((req, res, next) => {
-    console.log("world");
-    next();
+
+app.use((err, req, res, next) => {
+    res.locals.error = err;
+   
+    res.status(err.status);
+    res.render('error');
+    
+    //res.render('error', err);
 })
 
 

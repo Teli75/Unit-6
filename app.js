@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 
 var indexRouter = require('./routes/index');
+var aboutRouter = require('./routes/about');
+var projectRouter = require('./routes/project');
 
 var app = express();
 //encodes urls and turns off extended option
@@ -20,10 +22,8 @@ app.use(cookieParser());
 //app.use(express.json());
 
 app.use('/', indexRouter);
-
-app.use(function(req, res, next) {
-    next(createError(404));
-});
+app.use('/about', aboutRouter);
+app.use('/project', projectRouter);
 
 
 app.listen(3001);

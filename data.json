@@ -5,8 +5,8 @@
         "project_name": "Random Quote Generator",
         "description": "Shows a random quote",
         "technologies": ["html", "css", "javascript"],
-        "live_link": "check project resources",
-        "github_link": "",
+        "live_link": "https://teli75.github.io/Project-1/",
+        "github_link": "https://github.com/Teli75/Project-1",
         "image_urls": ["/static/images/Random_Quote_Main.jpg", "/static/images/Random_Quote_Extra.jpg"]
       },
       {
@@ -14,7 +14,7 @@
         "project_name": "Data Pagination and Filtering",
         "description": "Uses pagination to enhance usability of a page",
         "technologies": ["html", "css", "javascript"],
-        "live_link": "",
+        "live_link": "https://teli75.github.io/Project-2/",
         "github_link": "https://github.com/Teli75/Project-2",
         "image_urls": ["/static/images/Pagination_Main.jpg",  "/static/images/Pagination_Extra.jpg"]
       },
@@ -23,7 +23,7 @@
         "project_name": "Interactive Form",
         "description": "Uses JS to enhanve an interactive registration form",
         "technologies": ["html", "css", "javascript"],
-        "live_link": "",
+        "live_link": "https://teli75.github.io/TechDegree-Project-3/",
         "github_link": "https://github.com/Teli75/TechDegree-Project-3",
         "image_urls": ["/static/images/Conference_Main.jpeg", "/static/images/Conference_Extra.jpg"]
       },
@@ -31,8 +31,8 @@
         "id": "4",
         "project_name": "OOP Game Show App",
         "description": "Uuse JavaScript and OOP for a game like hang man",
-        "technologies": ["html", "css", "javascript"],
-        "live_link": "",
+        "technologies": ["html", "css", "javascript, oop"],
+        "live_link": "https://teli75.github.io/Unit_4_Project/",
         "github_link": "https://github.com/Teli75/Unit_4_Project",
         "image_urls": ["/static/images/Phase_Hunter_Main_2.jpg", "/static/images/Phase_Hunter_Extra.jpg"]
       },
@@ -40,8 +40,8 @@
         "id": "5",
         "project_name": "Public API Requests",
         "description": "Uses an api to grab employee data to build an employee directory",
-        "technologies": ["html", "css", "javascript"],
-        "live_link": "",
+        "technologies": ["html", "css", "javascript, api"],
+        "live_link": "https://teli75.github.io/Project-5/",
         "github_link": "https://github.com/Teli75/Unit-5-Project",
         "image_urls": ["/static/images/Employee_Dir_Main.jpg", "/static/images/Employee_Dir_Extra.jpg"]
       }

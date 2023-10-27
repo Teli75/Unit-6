@@ -137,7 +137,7 @@ nav a span {
   height: 100%;
   min-height: 100%;
   padding: 20px;
-  background: #000;
+  background: #EF626C;
 }
 
 .sidebar-info-box {
@@ -167,7 +167,7 @@ nav a span {
   text-rendering: optimizeLegibility;
   line-height: 1.6;
   font-size: 14px;
-  color: #999
+  color: #555;
 }
 
 .sidebar a {
@@ -176,7 +176,7 @@ nav a span {
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #555;
+  color: #000;
 }
 
 .header {
@@ -360,5 +360,24 @@ nav a span {
 
   .inner-wrapper {
     max-width: 1200px;
+  }
+
+  /*
+  Overlay for project buttons
+  */
+  .cell:after{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+    position: absolute;
+    background-color: blue;
+    justify-content: center;
+    transition: 0.6s;
+    content: text;
+  }
+  
+  .cell:hover:after {
+    display: block;
   }
 }

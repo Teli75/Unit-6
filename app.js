@@ -3,9 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 
-var indexRouter = require('./Routes/index');
+var indexRouter = require('./routes/index');
 var aboutRouter = require('./routes/about');
-var projectRouter = require('./routes/project');
 
 var app = express();
 //encodes urls and turns off extended option
@@ -23,14 +22,12 @@ app.use(cookieParser());
 
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
-app.use('/project', projectRouter);
 
 app.use((req, res, next) => {
     console.log("Hello");
     const err = new Error("Not Found");
     err.status = 404;
     next(err);
-    //res.render('page-not-found', err);
 });
 
 app.use((err, req, res, next) => {
@@ -38,7 +35,6 @@ app.use((err, req, res, next) => {
         res.status(404);
         err.status = 404;
         err.message = "not-found";
-        console.log(err.status);
         res.render('page-not-found', {err});
     } else {
         err.status =  err.status || 500;

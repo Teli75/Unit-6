@@ -17,7 +17,7 @@ block content
       
 
         .cell
-          a(href=`/project/${project.id}`)
+          a(href=`/project/${project.id}`, .hover-effect)
             img.thumbnail(src=`${project.image_urls[0]}`, alt=`Image of my ${project.project_name}`)
             h5=`${project.project_name}`
 

@@ -361,23 +361,3 @@ nav a span {
   .inner-wrapper {
     max-width: 1200px;
   }
-
-  /*
-  Overlay for project buttons
-  */
-  .cell:after{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0; 
-    position: absolute;
-    background-color: blue;
-    justify-content: center;
-    transition: 0.6s;
-    content: text;
-  }
-  
-  .cell:hover:after {
-    display: block;
-  }
-}

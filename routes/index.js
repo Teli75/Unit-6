@@ -15,7 +15,7 @@ router.get('/project/:id', function(req, res, next) {
     if (project) {
       res.render('project', { project });
     } else {
-        res.send('hi');
+        next();
     }
   });
   

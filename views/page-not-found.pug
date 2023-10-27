@@ -1,8 +1,9 @@
 extends layout
 
 block content
-    article 
-        h1= err
-        h2= err.status
-        h1= err.message
-        pre= err.stack
+    
+    h1= err.message
+    h2= err.status
+    pre= err.stack
+
+    img(src='/static/images/oops.jpg', alt='Oops face')

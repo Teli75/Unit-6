@@ -9,4 +9,4 @@ css, pug, express, javascript
 npm install
 
 #Changes
-Changed font colors and background color in index.js
+Changed font colors and background color in index.js and added box shadow to my projects

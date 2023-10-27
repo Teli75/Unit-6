@@ -24,7 +24,7 @@ app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 
 app.use((req, res, next) => {
-    console.log("Hello");
+    console.log("I'm sorry, but this page is not found");
     const err = new Error("Not Found");
     err.status = 404;
     next(err);

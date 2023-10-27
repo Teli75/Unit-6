@@ -32,7 +32,7 @@
         "project_name": "OOP Game Show App",
         "description": "Uuse JavaScript and OOP for a game like hang man",
         "technologies": ["html", "css", "javascript, oop"],
-        "live_link": "https://teli75.github.io/Unit_4_Project/",
+        "live_link": "https://teli75.github.io/Project-4/",
         "github_link": "https://github.com/Teli75/Unit_4_Project",
         "image_urls": ["/static/images/Phase_Hunter_Main_2.jpg", "/static/images/Phase_Hunter_Extra.jpg"]
       },
